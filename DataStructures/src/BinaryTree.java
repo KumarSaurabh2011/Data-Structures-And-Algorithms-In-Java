@@ -60,10 +60,37 @@ public class BinaryTree {
         }
     }
 
+    public void inOrder(TreeNode root){
+        if(root==null){
+            return;
+        }
+        inOrder(root.left);
+        System.out.println(root.data+ " ");
+        inOrder(root.right);
+    }
+
+    public void inOrderIterative(){
+        if(root == null)
+            return;
+        Stack<TreeNode> st = new Stack<>();
+        TreeNode temp = root;
+        while(!st.isEmpty() || temp!=null){
+            if(temp!=null){
+                st.push(temp);
+                temp=temp.left;
+            } else {
+                temp=st.pop();
+                System.out.println(temp.data + " ");
+                temp=temp.right;
+            }
+
+        }
+    }
+
     public static void main(String[] args) {
         BinaryTree bt = new BinaryTree();
         bt.CreateBinaryTree();
-        bt.preOrderIterative();
+        bt.inOrderIterative();
 
     }
 
