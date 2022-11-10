@@ -1,4 +1,4 @@
 package DSAImplementations.BasicProblems;
 
-public class PrimeNumber {
+ public class PrimeNumber {
 }
