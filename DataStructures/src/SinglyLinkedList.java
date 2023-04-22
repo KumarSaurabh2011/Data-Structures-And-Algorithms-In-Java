@@ -54,7 +54,7 @@ public class SinglyLinkedList {
     //****Insert node at the End ****
 
     public void insertLast(int value){
-        ListNode newNode = new ListNode(8);
+        ListNode newNode = new ListNode(value);
         if(head == null){
             head = newNode;
             return;
@@ -67,6 +67,10 @@ public class SinglyLinkedList {
 
 
     }
+
+    //**** Insert a node at given position ****
+
+
 
 
 
@@ -83,9 +87,9 @@ public class SinglyLinkedList {
         second.next = third;
         third.next = fourth;
 
-        sll.insertFirst(11);
-        sll.insertFirst(8);
-        sll.insertFirst(1);
+        sll.insertLast(11);
+        sll.insertLast(8);
+        sll.insertLast(1);
 
         sll.display();
         System.out.println("Length is - " +sll.length());
