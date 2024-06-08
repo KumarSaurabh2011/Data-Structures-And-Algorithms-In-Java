@@ -43,7 +43,7 @@ public class SubsetOfArray {
                     }
                 }
                 System.out.println (set);
-                // printing the required pattern line-by-line
+                // printing the required pattern line-by-line only
             }
         }
     }
