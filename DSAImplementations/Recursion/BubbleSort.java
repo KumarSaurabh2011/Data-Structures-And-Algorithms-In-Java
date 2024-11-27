@@ -1,5 +1,5 @@
 package DSAImplementations.Recursion;
-/*Revise this code again*/
+/*Revise this code again plz*/
 import java.util.*;
 public class BubbleSort {
     public static void main(String[] args) {
